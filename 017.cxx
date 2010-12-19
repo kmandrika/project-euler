@@ -49,11 +49,6 @@ unsigned int kilo[] = {
       , sizeof "thousand"  - 1
 };
 
-unsigned int misc[] = {
-        sizeof "hundred"   - 1
-      , sizeof "thousand"  - 1
-};
-
 unsigned int count_letters(unsigned int upper_bound)
 {
         unsigned int count = 0;
