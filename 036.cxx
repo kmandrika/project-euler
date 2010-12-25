@@ -26,7 +26,7 @@ unsigned int MSB(unsigned int number)
 	number |= number >> 8;
 	number |= number >> 16;
 
-	return table[(unsigned int)(number * 0x07C4ACDDU) >> 27];
+	return table[static_cast<unsigned int>(number * 0x07C4ACDDU) >> 27];
 }
 
 inline bool is_palindrome_base10(unsigned int number)
