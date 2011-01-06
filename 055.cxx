@@ -116,15 +116,15 @@ bool is_lychrel(unsigned int n, std::set<unsigned int>& lychrel)
 		ulong_t sum = N + N_reversed;
 
 		if (is_palindrome(sum)) {
-		        lychrel.insert(maybe_lychrel.begin(), maybe_lychrel.end());
-			return true;
+			return false;
 		}
 
 		N = sum;
 		N_reversed = N.reversed();
 	}
 
-	return false;
+	lychrel.insert(maybe_lychrel.begin(), maybe_lychrel.end());
+	return true;
 }
 
 unsigned int problem55()
@@ -135,7 +135,7 @@ unsigned int problem55()
 	std::set<unsigned int> lychrel;
 
 	while (n < 10000)
-	        if (!is_lychrel(n++, lychrel))
+	        if (is_lychrel(n++, lychrel))
 		        ++count;
 
 	return count;
