@@ -2,7 +2,7 @@
 #include <vector>
 #include <cmath>
 
-unsigned long long sum_of_primes_below(unsigned int value)
+unsigned long long problem10(unsigned int value)
 {
         unsigned int primes_list[] = { 2, 3, 5, 7, 11, 13, 17, 19 };
 	unsigned int n = 23;
@@ -40,5 +40,5 @@ unsigned long long sum_of_primes_below(unsigned int value)
 
 int main(int argc, char* argv[])
 {
-        std::cout<<sum_of_primes_below(2000000)<<std::endl;
+        std::cout<<problem10(2000000)<<std::endl;
 }

@@ -22,7 +22,7 @@ unsigned int count_divisors(unsigned long long number)
 	    
 }
 
-unsigned int get_triangle_and_count_divisors(unsigned int divisor_count)
+unsigned int problem12(unsigned int divisor_count)
 {
 	unsigned long long candidate = 0;
 	unsigned long long i = 1;
@@ -38,5 +38,5 @@ unsigned int get_triangle_and_count_divisors(unsigned int divisor_count)
 
 int main(int argc, char* argv[])
 {
-        std::cout<<get_triangle_and_count_divisors(500)<<std::endl;
+        std::cout<<problem12(500)<<std::endl;
 }

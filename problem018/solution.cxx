@@ -39,7 +39,12 @@ unsigned int max_sum(unsigned int* triangle, unsigned int depth, unsigned int le
         );
 }
 
+unsigned int problem18()
+{
+        return max_sum(triangle, 15, 0, 0);
+}
+
 int main(int argc, char* argv[])
 {
-        std::cout<<max_sum(triangle, 15, 0, 0)<<std::endl;
+        std::cout<<problem18()<<std::endl;
 }

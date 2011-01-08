@@ -49,7 +49,7 @@ unsigned int kilo[] = {
       , sizeof "thousand"  - 1
 };
 
-unsigned int count_letters(unsigned int upper_bound)
+unsigned int problem17(unsigned int upper_bound)
 {
         unsigned int count = 0;
 	unsigned int i = 1;
@@ -86,5 +86,5 @@ unsigned int count_letters(unsigned int upper_bound)
 
 int main(int argc, char* argv[])
 {
-        std::cout<<count_letters(1000)<<std::endl;
+        std::cout<<problem17(1000)<<std::endl;
 }

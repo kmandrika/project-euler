@@ -21,7 +21,7 @@ unsigned long long get_hexagonal_term(unsigned int i)
         return i * (2 * i - 1);
 }
 
-unsigned long long find_hex_pent_tri(unsigned int n)
+unsigned long long problem45(unsigned int n)
 {
         unsigned long long hex = 0;
 
@@ -38,5 +38,5 @@ int main(int argc, char* argv[])
 {
         BOOST_STATIC_ASSERT(sizeof (unsigned long long) == 8);
 
-        std::cout<<find_hex_pent_tri(143 + 1)<<std::endl;
+        std::cout<<problem45(143 + 1)<<std::endl;
 }

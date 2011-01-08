@@ -50,7 +50,7 @@ inline bool is_palindrome_base2(unsigned int number)
 	return true;
 }
 
-unsigned int find_sum_of_palindromes(unsigned int upper_bound)
+unsigned int problem36(unsigned int upper_bound)
 {
         unsigned int sum = 0;
 	unsigned int i = 1;
@@ -66,5 +66,5 @@ unsigned int find_sum_of_palindromes(unsigned int upper_bound)
 
 int main(int argc, char* argv[])
 {
-        std::cout<<find_sum_of_palindromes(1000000)<<std::endl;
+        std::cout<<problem36(1000000)<<std::endl;
 }

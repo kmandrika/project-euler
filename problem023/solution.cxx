@@ -41,7 +41,7 @@ bool is_sum_of_abundant(unsigned int n, const std::set<unsigned int>& abundant)
 	return false;
 }
 
-unsigned int find_sum(unsigned int upper_bound)
+unsigned int problem23(unsigned int upper_bound)
 {
         std::set<unsigned int> abundant;
 
@@ -60,5 +60,5 @@ unsigned int find_sum(unsigned int upper_bound)
 
 int main(int argc, char* argv[])
 {
-        std::cout<<find_sum(28123)<<std::endl;
+        std::cout<<problem23(28123)<<std::endl;
 }

@@ -71,9 +71,15 @@ unsigned int max_sum(detail::triangle_t& triangle, unsigned int level)
 	return get_value_at(triangle, 0, 0);
 }
 
-int main(int argc, char* argv[])
+unsigned int problem67()
 {
         detail::triangle_t triangle("triangle.txt");
 
-        std::cout<<max_sum(triangle, 100 - 1)<<std::endl;
+	return max_sum(triangle, 100 - 1);
+}
+
+int main(int argc, char* argv[])
+{
+
+        std::cout<<problem67()<<std::endl;
 }

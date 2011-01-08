@@ -13,7 +13,7 @@ unsigned int sum_of_raised_digits(unsigned int n, unsigned int power)
 	return sum;
 }
 
-unsigned int sum_of(unsigned int power)
+unsigned int problem30(unsigned int power)
 {
         unsigned int upper_bound = pow(10, power + 1) - 1;
 	unsigned int sum = 0;
@@ -32,5 +32,5 @@ unsigned int sum_of(unsigned int power)
 
 int main(int argc, char* argv[])
 {
-        std::cout<<sum_of(5)<<std::endl;
+        std::cout<<problem30(5)<<std::endl;
 }

@@ -12,8 +12,6 @@
 using namespace std;
 using namespace boost;
 
-namespace detail {
-
 typedef    pair<string, unsigned int>    name_value;
 typedef    char_separator<char>          separator_t;
 
@@ -82,17 +80,15 @@ bool is_triangle_number(unsigned int n)
 	return root - floor(root) < 4 * DBL_EPSILON;
 }
 
-}
-
-unsigned int count_triangle_words(const ::detail::words_t& words)
+unsigned int problem42(const words_t& words)
 {
         unsigned int count = 0;
 
-        ::detail::words_t::const_iterator i = words.begin();
-	::detail::words_t::const_iterator e = words.end();
+        words_t::const_iterator i = words.begin();
+	words_t::const_iterator e = words.end();
 
 	while (i != e) {
-	        if (::detail::is_triangle_number(i->second))
+	        if (is_triangle_number(i->second))
 		        ++count;
 		++i;
 	}
@@ -102,5 +98,5 @@ unsigned int count_triangle_words(const ::detail::words_t& words)
 
 int main(int argc, char* argv[])
 {
-        cout<<count_triangle_words(::detail::words_t("words.txt"))<<endl;
+        cout<<problem42(words_t("words.txt"))<<endl;
 }

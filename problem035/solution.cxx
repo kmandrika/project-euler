@@ -57,7 +57,12 @@ unsigned int count_circular_primes_below(unsigned int upper_bound)
 	return count;
 }
 
+unsigned int problem35()
+{
+        return count_circular_primes_below(1000000);
+}
+
 int main(int argc, char* argv[])
 {
-        std::cout<<count_circular_primes_below(1000000)<<std::endl;
+        std::cout<<problem35()<<std::endl;
 }

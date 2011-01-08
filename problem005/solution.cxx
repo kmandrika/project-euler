@@ -49,7 +49,7 @@ unsigned long long LCM(std::vector<unsigned int>& factors, const std::vector<uns
 	return lcm;
 }
 
-int main(int argc, char* argv[])
+unsigned int problem5()
 {
         unsigned int factors_list[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20 };
 	unsigned int lprimes_list[] = { 2, 3, 5, 7, 11, 13, 17, 19 };
@@ -63,5 +63,10 @@ int main(int argc, char* argv[])
 	      , lprimes_list + sizeof lprimes_list / sizeof (unsigned int)
 	);
 
-	std::cout<<LCM(factors, lprimes)<<std::endl;
+	return LCM(factors, lprimes);
+}
+
+int main(int argc, char* argv[])
+{
+        std::cout<<problem5()<<std::endl;
 }

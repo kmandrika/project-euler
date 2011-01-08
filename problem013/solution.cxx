@@ -105,7 +105,8 @@ const char* numbers[] = {
       , "53503534226472524250874054075591789781264330331690"
 };
 
-void print_sum_of(const char* numbers[], size_t digits, size_t count)
+//! too bad c++03 doesn't support rvalue references
+std::string problem13(const char* numbers[], size_t digits, size_t count)
 {
         std::string result;
 
@@ -128,10 +129,11 @@ void print_sum_of(const char* numbers[], size_t digits, size_t count)
 	result.append(1, '\0');
 
 	std::reverse(result.begin(), result.end());
-	std::cout<<result<<std::endl;
+
+	return result.substr(1, 10);
 }
 
 int main(int argc, char* argv[])
 {
-        print_sum_of(numbers, 50, sizeof numbers / sizeof (numbers[0]));
+        std::cout<<problem13(numbers, 50, sizeof numbers / sizeof (numbers[0]))<<std::endl;
 }

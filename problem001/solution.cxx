@@ -1,6 +1,6 @@
 #include <iostream>
 
-unsigned int sum(unsigned int bound)
+unsigned int problem1(unsigned int bound)
 {
         unsigned int _03s = bound / 3;
 	unsigned int _05s = bound / 5 - 1;
@@ -15,5 +15,5 @@ unsigned int sum(unsigned int bound)
 
 int main(int argc, char* argv[])
 {
-        std::cout<<sum(1000)<<std::endl;
+        std::cout<<problem1(1000)<<std::endl;
 }

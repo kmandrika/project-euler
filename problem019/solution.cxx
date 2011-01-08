@@ -31,7 +31,7 @@ unsigned int count_sundays_on(unsigned int year, unsigned int& offset)
 }
 
 
-unsigned int count_sundays(unsigned int from_year, unsigned int day_of_first, unsigned int to_year)
+unsigned int problem19(unsigned int from_year, unsigned int day_of_first, unsigned int to_year)
 {
 	unsigned int count = 0;
 
@@ -48,5 +48,5 @@ unsigned int count_sundays(unsigned int from_year, unsigned int day_of_first, un
 
 int main(int argc, char* argv[])
 {
-        std::cout<<count_sundays(1900, 1, 2000)<<std::endl;
+        std::cout<<problem19(1900, 1, 2000)<<std::endl;
 }

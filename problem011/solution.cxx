@@ -23,7 +23,7 @@ unsigned int grid[20][20] = {
       , {  1, 70, 54, 71, 83, 51, 54, 69, 16, 92, 33, 48, 61, 43, 52,  1, 89, 19, 67, 48 }
 };
 
-unsigned int find_greatest_product_of(unsigned int (*grid)[20] , size_t x, size_t y)
+unsigned int problem11(unsigned int (*grid)[20] , size_t x, size_t y)
 {
         unsigned int highest = 0;
 	unsigned int i = 0;
@@ -60,5 +60,5 @@ unsigned int find_greatest_product_of(unsigned int (*grid)[20] , size_t x, size_
 
 int main(int argc, char*argv[])
 {
-        std::cout<<find_greatest_product_of(grid, 20, 20)<<std::endl;
+        std::cout<<problem11(grid, 20, 20)<<std::endl;
 }

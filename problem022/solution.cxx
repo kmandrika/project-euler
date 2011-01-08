@@ -49,7 +49,7 @@ struct name_value_pred {
 	}
 };
 
-unsigned int get_sum(const char* filename)
+unsigned int problem22(const char* filename)
 {
         unsigned int sum = 0;
 
@@ -73,5 +73,5 @@ unsigned int get_sum(const char* filename)
 
 int main(int argc, char* argv[])
 {
-        cout<<get_sum("names.txt")<<endl;
+        cout<<problem22("names.txt")<<endl;
 }

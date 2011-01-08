@@ -6,7 +6,7 @@ unsigned int next_term(unsigned int previous_term, bool odd)
         return odd ? 3 * previous_term + 1 : previous_term / 2;
 }
 
-unsigned int find_longest_chain(unsigned int upper_bound)
+unsigned int problem14(unsigned int upper_bound)
 {
         std::pair<unsigned int, unsigned int> highest = std::make_pair(
                 0     // chain length
@@ -33,5 +33,5 @@ unsigned int find_longest_chain(unsigned int upper_bound)
 
 int main(int argc, char* argv[])
 {
-        std::cout<<find_longest_chain(999999)<<std::endl;
+        std::cout<<problem14(1000000 - 1)<<std::endl;
 }

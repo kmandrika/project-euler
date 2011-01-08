@@ -30,7 +30,7 @@ unsigned int find_palindrome(unsigned int upper_bound, unsigned int lower_bound,
 	return highest;
 }
 
-unsigned int find_palindrome(unsigned int upper_bound, unsigned int lower_bound)
+unsigned int problem4(unsigned int upper_bound, unsigned int lower_bound)
 {
         unsigned int highest = 0;
 	unsigned int i = upper_bound;
@@ -43,5 +43,5 @@ unsigned int find_palindrome(unsigned int upper_bound, unsigned int lower_bound)
 
 int main(int argc, char* argv[])
 {
-        std::cout<<find_palindrome(999, 99)<<std::endl;
+        std::cout<<problem4(1000 - 1, 100 - 1)<<std::endl;
 }

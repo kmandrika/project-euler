@@ -2,7 +2,7 @@
 #include <vector>
 #include <cmath>
 
-unsigned int get_prime(unsigned int ith)
+unsigned int problem7(unsigned int ith)
 {
         unsigned int primes_list[] = { 2, 3, 5, 7, 11, 13 }; // initial list
 	unsigned int number = 17;
@@ -36,5 +36,5 @@ unsigned int get_prime(unsigned int ith)
 
 int main(int argc, char* argv[])
 {
-        std::cout<<get_prime(10001)<<std::endl;
+        std::cout<<problem7(10001)<<std::endl;
 }

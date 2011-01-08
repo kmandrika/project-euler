@@ -35,7 +35,7 @@ unsigned int get_product(const char* number, size_t length)
 	return product;
 }
 
-unsigned int get_highest(const char* number, size_t length, size_t digits)
+unsigned int problem8(const char* number, size_t length, size_t digits)
 {
         unsigned int i = 0;
 	unsigned int e = length - digits;
@@ -49,5 +49,5 @@ unsigned int get_highest(const char* number, size_t length, size_t digits)
 
 int main(int argc, char* argv[])
 {
-        std::cout<<get_highest(number, 1000, 5)<<std::endl;
+        std::cout<<problem8(number, 1000, 5)<<std::endl;
 }

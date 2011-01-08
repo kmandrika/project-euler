@@ -7,7 +7,7 @@ void factor(unsigned long long i, unsigned long long& number)
 	        number /= i;
 }
 
-unsigned long long largest_prime_factor(unsigned long long number)
+unsigned long long problem3(unsigned long long number)
 {
         unsigned long long i = 2;
 
@@ -21,5 +21,5 @@ int main(int argc, char* argv[])
 {
         BOOST_STATIC_ASSERT(sizeof (long long) == 8);
 
-	std::cout<<largest_prime_factor(600851475143)<<std::endl;
+	std::cout<<problem3(600851475143)<<std::endl;
 }

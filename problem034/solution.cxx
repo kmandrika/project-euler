@@ -38,7 +38,7 @@ unsigned int sum_of_factorial_of_digits(unsigned int number, cache_t& cache)
 //! this can be done significantly faster via a factorial table
 //  and std::next_permutation on a variable number of digits,
 //  but this is good enough.
-unsigned int find_sum(unsigned int upper_bound = 100000)
+unsigned int problem34(unsigned int upper_bound = 100000)
 {
         unsigned int sum = 0;
         unsigned int i = 3;
@@ -56,5 +56,5 @@ unsigned int find_sum(unsigned int upper_bound = 100000)
 
 int main(int argc, char* argv[])
 {
-        std::cout<<find_sum()<<std::endl;
+        std::cout<<problem34()<<std::endl;
 }

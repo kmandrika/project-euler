@@ -44,7 +44,12 @@ unsigned int sum_of_amicable_pairs_under(unsigned int upper_bound)
 	return std::accumulate(amicable_pairs.begin(), amicable_pairs.end(), 0);
 }
 
+unsigned int problem21()
+{
+        return sum_of_amicable_pairs_under(10000);
+}
+
 int main(int argc, char* argv[])
 {
-        std::cout<<sum_of_amicable_pairs_under(10000)<<std::endl;
+        std::cout<<problem21()<<std::endl;
 }

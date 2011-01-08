@@ -35,7 +35,7 @@ unsigned long long concatenate(unsigned int integer, unsigned int n_bound)
 unsigned int problem38()
 {
         unsigned int integer = 1;
-	unsigned int integer_upper_bound = 499999999;
+	unsigned int integer_upper_bound = 1000000;
 	unsigned int max = 0;
 
 	while (integer != integer_upper_bound) {
@@ -43,10 +43,8 @@ unsigned int problem38()
 		unsigned long long concatenated = 0;
 
 	        while ((concatenated = concatenate(integer, n++)) < 1000000000) {
-		        if (concatenated > 99999999 && is_pandigital(concatenated) && concatenated > max) {
+		        if (concatenated > 99999999 && is_pandigital(concatenated) && concatenated > max)
 			        max = concatenated;
-				std::cout<<"found new max = "<<max<<", int = "<<integer<<", n = "<<n - 1<<std::endl;
-			}
 		}
 
 		++integer;

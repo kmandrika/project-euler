@@ -1,6 +1,6 @@
 #include <iostream>
 
-unsigned int sum_diagonals(size_t size)
+unsigned int problem28(size_t size)
 {
         unsigned int current = size * size;
         unsigned int sum = current;
@@ -20,5 +20,5 @@ unsigned int sum_diagonals(size_t size)
 
 int main(int argc, char* argv[])
 {
-        std::cout<<sum_diagonals(1001)<<std::endl;
+        std::cout<<problem28(1001)<<std::endl;
 }

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cmath>
 
-int main(int argc, char* argv[])
+unsigned long long problem6()
 {
         unsigned long long sum_of_numbers = 0;
 	unsigned long long sum_of_squares = 0;
@@ -14,5 +14,10 @@ int main(int argc, char* argv[])
 	//! should probably use abs()
 	unsigned long long difference = pow(sum_of_numbers, 2) - sum_of_squares;
 
-	std::cout<<difference<<std::endl;
+	return difference;
+}
+
+int main(int argc, char* argv[])
+{
+        std::cout<<problem6()<<std::endl;
 }

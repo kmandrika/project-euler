@@ -60,7 +60,7 @@ unsigned int m_of(unsigned int sum)
 
 //! finds the product of a Pythagorean triple whose sum is 'sum' via
 //  Euclid's formula with 'k'
-inline unsigned int find_product(unsigned int sum)
+inline unsigned int problem9(unsigned int sum)
 {
         //! this could be rewritten as a sequence of 3
         //  nested loops.
@@ -69,5 +69,5 @@ inline unsigned int find_product(unsigned int sum)
 
 int main(int argc, char* argv[])
 {
-        std::cout<<find_product(1000)<<std::endl;
+        std::cout<<problem9(1000)<<std::endl;
 }

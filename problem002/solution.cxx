@@ -11,7 +11,7 @@ unsigned int fibonacci_term(unsigned int i)
 	return (pow(golden_ratio, i) - pow(1 - golden_ratio, i)) / square_root_of_5;
 }
 
-unsigned int accumulate_evens_not_exceeding(unsigned int bound)
+unsigned int problem2(unsigned int bound)
 {
         unsigned int f = 0; // value of ith element of the sequence
 	unsigned int i = 0;
@@ -29,5 +29,5 @@ unsigned int accumulate_evens_not_exceeding(unsigned int bound)
 
 int main(int argc, char* argv[])
 {
-        std::cout<<accumulate_evens_not_exceeding(4000000)<<std::endl;
+        std::cout<<problem2(4000000)<<std::endl;
 }
