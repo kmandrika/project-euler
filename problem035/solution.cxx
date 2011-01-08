@@ -29,10 +29,6 @@ unsigned int count_circular_primes_below(unsigned int upper_bound)
 	      , primes_list + sizeof primes_list / sizeof (primes_list[0])
         );
 
-	//! guess how many primes numbers there are below
-	//  'upper_bound'
-	//primes.reserve(upper_bound / log(upper_bound));
-
 	//! first generate all the primes.
 	while (*primes.rbegin() <= upper_bound) {
 	        unsigned int divisor_limit = sqrt(number);
