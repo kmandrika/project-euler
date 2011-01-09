@@ -7,7 +7,7 @@ unsigned long long get_triangle_term(unsigned long long i)
         return i == std::numeric_limits<unsigned long long>::max() ? 0 : i * (i + 1) / 2;
 }
 
-//! brute force is fast enough
+//! brute force is fast enough (doesn't work if 'number' is a square)
 unsigned int count_divisors(unsigned long long number)
 {
         unsigned int divisors = 0;
@@ -18,8 +18,7 @@ unsigned int count_divisors(unsigned long long number)
 		        //! divisors come in pairs
 		        divisors += 2;
 
-	return divisors;
-	    
+	return divisors;	    
 }
 
 unsigned int problem12(unsigned int divisor_count)
