@@ -18,8 +18,8 @@ unsigned int problem73()
 
 	for (unsigned int d = 3; d <= 12000; ++d)
 	        for (unsigned int n = d / 3 + 1; n <= d / 2; ++n)
-		    if (GCD(n, d) == 1)
-			    ++count;
+		        if (GCD(n, d) == 1)
+			        ++count;
 
 	return count;
 }
